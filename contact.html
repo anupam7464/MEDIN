@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="with=device-width, initial-
+   scale=1.0"
+    />
+    <title>MEDIN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Nanum+Gothic&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img class="logo" src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Contact Us</h1>
+    </section>
+
+    <!---contact us---->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d7383.434620923183!2d73.3634204!3d22.2886958!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x395fda2400192473%3A0xc319c9237f2928e8!2sParul%20University%20Post%20Limda%20Waghodia%2C%20Gujarat%20391760!3m2!1d22.2886958!2d73.3634204!5e0!3m2!1sen!2sin!4v1652446241347!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <a href="#" class="fa fa-home"> </a>
+            <span>
+              <h5>Parul University<br />,Vadodara</h5>
+              <p>
+                P.O.Limda, Ta.Waghodia-391760<br />Dist. Vadodara, Gujarat
+                (India)
+              </p>
+            </span>
+          </div>
+          <div>
+            <a href="#" class="fa fa-phone"> </a>
+            <span>
+              <h5>+1 01234567890</h5>
+              <p>Monday to Saturday, 10AM to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <a href="#" class="fa fa-envelope-o"> </a>
+            <span>
+              <h5>MEDIN@paruluniversity.ac.in</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter your name" required />
+            <input type="email" placeholder="Enter email address" required />
+            <input type="text" placeholder="Enter your subject" required />
+            <textarea rows="8" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Welcome to MEDIN, your comprehensive healthcare management solution! We
+        leverage MongoDB, a state-of-the-art NoSQL database, to effectively
+        manage and safeguard patient data, medical histories, billing
+        information, doctor schedules, and more. MEDIN meticulously records all
+        crucial data in adaptable documents, providing flexibility to modify as
+        per evolving needs. Whether it's swiftly retrieving a patient's medical
+        history, tracking doctor's schedules, or ensuring seamless billing and
+        transactions, MEDIN can handle it all with MongoDB's swift indexing and
+        scalability. We strive to offer a user-friendly experience while
+        maintaining the highest standards of data security. With MEDIN, managing
+        healthcare information is now easier, faster, and more efficient than
+        ever before. Trust MEDIN for your end-to-end healthcare data management
+        needs.
+      </p>
+      <div class="icons">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <a href="#" class="fa fa-facebook"> </a>
+        <a href="#" class="fa fa-twitter"> </a>
+        <a href="#" class="fa fa-linkedin"> </a>
+        <a href="#" class="fa fa-instagram"> </a>
+        <a href="#" class="fa fa-youtube"> </a>
+      </div>
+      Copyright <span>&#169;</span> 2023. All Rights Reserved by MEDIN
+    </section>
+
+    <!-------JavaScript for Toggle Menu----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

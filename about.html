@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="with=device-width, initial-
+   scale=1.0"
+    />
+    <title>MEDIN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Nanum+Gothic&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img class="logo" src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+    <!---about us content---->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <hl>Best Hospital Managent System : MEDIN</hl>
+          <p>
+            Step into the future of healthcare data management with MEDIN! By
+            leveraging MongoDB, an advanced NoSQL database, we provide a robust,
+            user-friendly platform that caters to a wide range of healthcare
+            data needs. Our system deftly captures and securely houses all vital
+            information - patient records, medical histories, billing
+            information, and doctor schedules - within flexible,
+            easily-modifiable documents. This ensures that our service remains
+            in sync with your ever-changing requirements. Whether it's pulling
+            up a comprehensive medical history at a moment's notice,
+            coordinating healthcare professionals' schedules, or processing
+            billing and transactions effortlessly, our system delivers.
+            MongoDB's high-speed indexing guarantees quick data retrieval, and
+            its unmatched scalability means we're well-equipped to handle data
+            loads of any size. We've melded high-end data security with a
+            user-friendly interface to provide a seamless healthcare data
+            management experience. With MEDIN, you're adopting more than a
+            service; you're stepping into a new era of healthcare data
+            management!
+          </p>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Welcome to MEDIN, your comprehensive healthcare management solution! We
+        leverage MongoDB, a state-of-the-art NoSQL database, to effectively
+        manage and safeguard patient data, medical histories, billing
+        information, doctor schedules, and more. MEDIN meticulously records all
+        crucial data in adaptable documents, providing flexibility to modify as
+        per evolving needs. Whether it's swiftly retrieving a patient's medical
+        history, tracking doctor's schedules, or ensuring seamless billing and
+        transactions, MEDIN can handle it all with MongoDB's swift indexing and
+        scalability. We strive to offer a user-friendly experience while
+        maintaining the highest standards of data security. With MEDIN, managing
+        healthcare information is now easier, faster, and more efficient than
+        ever before. Trust MEDIN for your end-to-end healthcare data management
+        needs.
+      </p>
+      <div class="icons">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <a href="#" class="fa fa-facebook"> </a>
+        <a href="#" class="fa fa-twitter"> </a>
+        <a href="#" class="fa fa-linkedin"> </a>
+        <a href="#" class="fa fa-instagram"> </a>
+        <a href="#" class="fa fa-youtube"> </a>
+      </div>
+      Copyright <span>&#169;</span> 2023. All Rights Reserved by MEDIN
+    </section>
+
+    <!-------JavaScript for Toggle Menu----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

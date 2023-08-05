@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-
+   scale=1.0">
+    <title>MEDIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Nanum+Gothic&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logo"src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="login.html">LOGIN</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            
+            <li><a href="contact.html">CONTACT</a></li>
+            
+            </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav> 
+            <div class="text-box">
+                <h1>MEDIN : Personal Heaalth Record</h1>
+                <p>track patient history, provide better care, keep track of appointments, save<br>
+                     patient insurance and payment data enable doctors and clinicians to check<br> 
+                     patient history,maintain patient care continuity, and save time and effort.
+                </p>
+                </div>
+    </section>
+
+    <!----Course ---->
+    <section class="course">
+    <h1>Services We Offer</h1>
+
+             <div class="row">
+
+        <div class="course-col">
+            <h3>track patient history</h3>
+        <p>Discover hassle-free scheduling with MEDIN! We harness MongoDB, an advanced NoSQL database, for efficient appointment management. MEDIN logs crucial appointment details - like time, date, and participants - in adaptable documents for flexibility. This feature allows us to modify your data as your requirements evolve. With MongoDB's swift indexing, your schedules are prepared in a snap, enhancing convenience. No matter if you're managing a personal agenda or a complex business schedule, MEDIN's robust system, empowered by MongoDB's scalability, is equipped to handle all. Welcome to the future of streamlined scheduling with MEDIN!</p>
+     </div>
+
+        <div class="course-col">
+            <h3>payment data </h3>
+        <p>
+            Experience seamless payments with MEDIN! We utilize MongoDB, a top-tier NoSQL database, to streamline your transaction process. MEDIN captures essential payment details such as transaction date, amount, and recipient in adaptable, secure documents, ensuring flexibility and safety. As your financial activities grow, we adapt swiftly, highlighting MongoDB's powerful scalability. The high-speed indexing function facilitates quick retrieval of your transaction history at a moment's notice. Whether you're managing personal finances or handling complex business transactions, MEDIN's payment system is designed to handle it all, providing a safe, efficient, and user-friendly experience. Say hello to smooth financial management with MEDIN!</p></div>
+        <div class="course-col">
+            <h3>keep track of appointments</h3>
+            <p>Enjoy stress-free scheduling with MEDIN! We utilize MongoDB, a high-performance NoSQL database, for effective appointment management. MEDIN securely logs vital appointment details - time, date, attendees - in flexible documents, offering agility as your needs change. MongoDB's rapid indexing allows for instant retrieval of your schedules. Regardless of whether you're juggling a personal calendar or managing a complex professional timetable, MEDIN's service, bolstered by MongoDB's scalability, is prepared to cater to all. From scheduling a single meeting to coordinating a vast conference, our system is designed to handle it. Welcome to the future of effortless scheduling with MEDIN!</p> </div>
+    </section>
+<!-- Call To Action--->
+<section class="cta">
+    <h1>Why Choose MEDIN?</h1>
+    <p> Going beyond business by offering an enriching experience.<br>Choose to make your life easy. Your health is our priority.</p>
+    <a href="contact.html"class="hero-btn">CONTACT US</a>
+</section>
+<!-- Footer-->
+ <section class="footer">
+     <h4>About Us</h4>
+     <p>  Welcome to MEDIN, your comprehensive healthcare management solution! We
+        leverage MongoDB, a state-of-the-art NoSQL database, to effectively
+        manage and safeguard patient data, medical histories, billing
+        information, doctor schedules, and more. MEDIN meticulously records all
+        crucial data in adaptable documents, providing flexibility to modify as
+        per evolving needs. Whether it's swiftly retrieving a patient's medical
+        history, tracking doctor's schedules, or ensuring seamless billing and
+        transactions, MEDIN can handle it all with MongoDB's swift indexing and
+        scalability. We strive to offer a user-friendly experience while
+        maintaining the highest standards of data security. With MEDIN, managing
+        healthcare information is now easier, faster, and more efficient than
+        ever before. Trust MEDIN for your end-to-end healthcare data management
+        needs.</p> <div class="icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    
+    
+    <a href="#" class="fa fa-facebook"> </a>   
+    <a href="#" class="fa fa-twitter"> </a>   
+    <a href="#" class="fa fa-linkedin"> </a>   
+    <a href="#" class="fa fa-instagram"> </a>   
+    <a href="#" class="fa fa-youtube"> </a>  
+</div>
+Copyright <span>&#169;</span> 2023. All Rights Reserved by MEDIN.
+      
+    
+ </section>
+
+
+
+    <!-------JavaScript for Toggle Menu----->
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+    navLinks.style.right = "0";
+    }
+    function hideMenu (){
+    navLinks.style.right = "-200px";
+    }
+    </script>
+
+
+</body>
+</html>
